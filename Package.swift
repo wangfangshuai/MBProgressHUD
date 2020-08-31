@@ -13,7 +13,10 @@ let package = Package(
             path: ".",
             exclude: ["Demo"],
             sources: ["MBProgressHUD.h", "MBProgressHUD.m"],
-            publicHeadersPath: "include"
+            publicHeadersPath: "include",
+            cSettings: [
+                .headerSearchPath("include")
+            ]
         )
     ]
 )
